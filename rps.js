@@ -1,6 +1,3 @@
-let humanScore = 0;
-let computerScore = 0;
-
 let buttons = document.querySelector(".choices");
 buttons.addEventListener("click", playRound);
 
@@ -14,14 +11,14 @@ message.style.textAlign = "center";
 playerScore.style.textAlign = "center";
 botScore.style.textAlign = "center";
 
-message.textContent = "Press any button choice to play a round!";
+message.textContent = "Press any button choice to play!";
 
 body.appendChild(message);
 body.appendChild(playerScore);
 body.appendChild(botScore);
 
 function getComputerChoice() {
-    return Math.floor(Math.random() * 3);
+    return Math.floor(Math.random() * 10);
 }
 
 function playRound(event) {
@@ -30,68 +27,34 @@ function playRound(event) {
 
         switch(target) {
             case "rock":
-                if (computerChoice == 0) {
-                    message.textContent = "Tie! Rock ties with rock!";
-                    playerScore.textContent = `Player Score: ${humanScore}`
-                    botScore.textContent = `Computer Score: ${computerScore}`
-                } else if (computerChoice == 1) {
-                    message.textContent = "You Lose! Rock loses to paper!";
-                    computerScore++;
-                    playerScore.textContent = `Player Score: ${humanScore}`
-                    botScore.textContent = `Computer Score: ${computerScore}`
+                if (computerChoice === 0) {
+                    message.textContent = "You Win! The computer chose scissors!"
+                } else if (computerChoice === 1 || computerChoice === 2) {
+                    message.textContent = "You Tied! The computer chose rock as well!"
                 } else {
-                    message.textContent = "You Win! Rock wins against scissors!";
-                    humanScore++;
-                    playerScore.textContent = `Player Score: ${humanScore}`
-                    botScore.textContent = `Computer Score: ${computerScore}`
+                    message.textContent = "You Lost! The computer chose paper!"
                 }
                 break;
             case "paper":
-                if (computerChoice == 0) {
-                    message.textContent = "You Win! Paper beats rock!";
-                    humanScore++;
-                    playerScore.textContent = `Player Score: ${humanScore}`
-                    botScore.textContent = `Computer Score: ${computerScore}`
-                } else if (computerChoice == 1) {
-                    message.textContent = "Tie! Paper ties with paper!";
-                    playerScore.textContent = `Player Score: ${humanScore}`
-                    botScore.textContent = `Computer Score: ${computerScore}`
+                if (computerChoice === 0) {
+                    message.textContent = "You Win! The computer chose scissors!"
+                } else if (computerChoice === 1 || computerChoice === 2) {
+                    message.textContent = "You Tied! The computer chose paper as well!"
                 } else {
-                    message.textContent = "You Lose! Paper loses against scissors!";
-                    computerScore++;
-                    playerScore.textContent = `Player Score: ${humanScore}`
-                    botScore.textContent = `Computer Score: ${computerScore}`
+                    message.textContent = "You Lost! The computer chose scissors!"
                 }
                 break;
             case "scissors":
-                if (computerChoice == 0) {
-                    message.textContent = "You Lose! Scissors loses to rock!";
-                    computerScore++;
-                    playerScore.textContent = `Player Score: ${humanScore}`
-                    botScore.textContent = `Computer Score: ${computerScore}`
-                } else if (computerChoice == 1) {
-                    message.textContent = "You Win! Scissors wins against paper!";
-                    humanScore++;
-                    playerScore.textContent = `Player Score: ${humanScore}`
-                    botScore.textContent = `Computer Score: ${computerScore}`
+                if (computerChoice === 0) {
+                    message.textContent = "You Win! The computer chose paper!"
+                } else if (computerChoice === 1 || computerChoice === 2) {
+                    message.textContent = "You Tied! The computer chose rock as scissors!"
                 } else {
-                    message.textContent = "Tie! Scissors ties with scissors!";
-                    playerScore.textContent = `Player Score: ${humanScore}`
-                    botScore.textContent = `Computer Score: ${computerScore}`
+                    message.textContent = "You Lost! The computer chose rock!"
                 }
                 break;
             default:
                 console.log("Something went wrong!");
                 break;
         } 
-    if (computerScore === 5) {
-        message.textContent = "Computer Wins! Try again next time.";
-        computerScore = 0;
-        humanScore = 0;
-    }
-    else if (humanScore === 5) {
-        message.textContent = "Congratulations! You won!";
-        computerScore = 0;
-        humanScore = 0;
-    }
 }
