@@ -8,10 +8,19 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-15px); /* adjust the value for how high you want it to bob */
+    transform: translateY(-15px);
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
   }
 }
 
@@ -27,18 +36,53 @@ body {
 .title {
   position: absolute;
   color: #4a1b10;
-  font-size: 13rem;
-  top: 24vh;
+  font-size: 0px;
+  top: 18vh;
   left: 0;
   margin-left: 8vw;
-  line-height: 27vh;
+  line-height: 18vh;
   width: 50%;
   display: flex;
   justify-content: flex-start;
+  flex-direction:column;
   z-index: 999;
   text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
     3px 3px 0 #000, -3px 0 0 #000, 3px 0 0 #000, 0 -3px 0 #000, 0 3px 0 #000,
     -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.first-word span, .second-word span {
+  display: inline-block;
+  font-size:13rem;
+  animation: wave 6s ease-in-out infinite;
+}
+
+.first-word span:nth-child(1) {
+  animation-delay: 0s;
+}
+.first-word span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.first-word span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.first-word span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.first-word span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.first-word span:nth-child(6) {
+  animation-delay: 1s;
+}
+.second-word span:nth-child(1) {
+  animation-delay: 1.2s;
+}
+.second-word span:nth-child(2) {
+  animation-delay: 1.4s;
+}
+.second-word span:nth-child(3) {
+  animation-delay: 1.6s;
 }
 
 #navbar {
@@ -79,6 +123,7 @@ body {
   width: 100%;
   display: flex;
   overflow: hidden;
+  flex-wrap:wrap;
 }
 
 .games {
@@ -171,4 +216,13 @@ body {
   justify-content: center;
   margin-top: 60px;
   margin-bottom: 40px;
+}
+
+#shovel {
+  position: absolute;
+  top: 72%;
+  left:11%;
+  height: 200px;
+  width: 200px;
+  z-index:80;
 }
