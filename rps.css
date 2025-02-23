@@ -3,6 +3,36 @@
     src: url(./assets/PirataOne-Regular.ttf);
   }
 
+@keyframes throwFromLeft {
+  0% {
+    transform: translateX(-10vw) scale(2);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(0) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes throwFromRight {
+  0% {
+    transform: translateX(10vw) scaleX(-1) scale(2);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(0) scaleX(-1) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) scaleX(-1) scale(1);
+    opacity: 1;
+  }
+}
+
 body {
     display:flex;
     flex-direction: column;

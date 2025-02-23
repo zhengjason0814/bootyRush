@@ -35,11 +35,13 @@ function playRound(event) {
                     playerChoice.src = "./assets/rock.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
+                    playerChoice.style.animation = "throwFromLeft 1s ease forwards";
                     let botChoice = document.createElement("img");
                     botChoice.src = "./assets/rock.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
+                    botChoice.style.animation = "throwFromRight 1s ease forwards";
                     if (playStage.hasChildNodes()) {
                         playStage.replaceChildren();
                     }
@@ -50,11 +52,13 @@ function playRound(event) {
                     playerChoice.src = "./assets/rock.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
+                    playerChoice.style.animation = "throwFromLeft 1s ease forwards";
                     let botChoice = document.createElement("img");
                     botChoice.src = "./assets/rock.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
+                    botChoice.style.animation = "throwFromRight 1s ease forwards";
                     if (playStage.hasChildNodes()) {
                         playStage.replaceChildren();
                     }
@@ -65,11 +69,13 @@ function playRound(event) {
                     playerChoice.src = "./assets/rock.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
+                    playerChoice.style.animation = "throwFromLeft 1s ease forwards";
                     let botChoice = document.createElement("img");
                     botChoice.src = "./assets/paper.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
+                    botChoice.style.animation = "throwFromRight 1s ease forwards";  
                     if (playStage.hasChildNodes()) {
                         playStage.replaceChildren();
                     }
@@ -83,11 +89,13 @@ function playRound(event) {
                     playerChoice.src = "./assets/paper.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
+                    playerChoice.style.animation = "throwFromLeft 1s ease forwards";
                     let botChoice = document.createElement("img");
                     botChoice.src = "./assets/rock.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
+                    botChoice.style.animation = "throwFromRight 1s ease forwards";
                     if (playStage.hasChildNodes()) {
                         playStage.replaceChildren();
                     }
@@ -98,11 +106,13 @@ function playRound(event) {
                     playerChoice.src = "./assets/paper.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
+                    playerChoice.style.animation = "throwFromLeft 1s ease forwards";
                     let botChoice = document.createElement("img");
                     botChoice.src = "./assets/paper.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
+                    botChoice.style.animation = "throwFromRight 1s ease forwards";
                     if (playStage.hasChildNodes()) {
                         playStage.replaceChildren();
                     }
@@ -113,11 +123,13 @@ function playRound(event) {
                     playerChoice.src = "./assets/paper.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
+                    playerChoice.style.animation = "throwFromLeft 1s ease forwards";
                     let botChoice = document.createElement("img");
                     botChoice.src = "./assets/scissors.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
+                    botChoice.style.animation = "throwFromRight 1s ease forwards";
                     if (playStage.hasChildNodes()) {
                         playStage.replaceChildren();
                     }
@@ -131,11 +143,13 @@ function playRound(event) {
                     playerChoice.src = "./assets/scissors.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
+                    playerChoice.style.animation = "throwFromLeft 1s ease forwards";
                     let botChoice = document.createElement("img");
                     botChoice.src = "./assets/paper.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
+                    botChoice.style.animation = "throwFromRight 1s ease forwards";
                     if (playStage.hasChildNodes()) {
                         playStage.replaceChildren();
                     }
@@ -146,11 +160,13 @@ function playRound(event) {
                     playerChoice.src = "./assets/scissors.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
+                    playerChoice.style.animation = "throwFromLeft 1s ease forwards";
                     let botChoice = document.createElement("img");
                     botChoice.src = "./assets/scissors.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
+                    botChoice.style.animation = "throwFromRight 1s ease forwards";
                     if (playStage.hasChildNodes()) {
                         playStage.replaceChildren();
                     }
@@ -161,11 +177,13 @@ function playRound(event) {
                     playerChoice.src = "./assets/scissors.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
+                    playerChoice.style.animation = "throwFromLeft 1s ease forwards";
                     let botChoice = document.createElement("img");
                     botChoice.src = "./assets/rock.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
+                    botChoice.style.animation = "throwFromRight 1s ease forwards";
                     if (playStage.hasChildNodes()) {
                         playStage.replaceChildren();
                     }
