@@ -24,7 +24,7 @@
     <div class="popup">
       <div  onclick="closePopup()" class="close">X</div>
       <div ><img class="stickimg" src="./assets/unboxing/stick.webp"></img></div>
-      <div class="Rarity">A Realistic Sticc</div>
+      <div id="Stick">A Realistic Sticc</div>
     </div>
     <script src="shared.js"></script>
     <script>
@@ -58,6 +58,7 @@
       let container = document.querySelector(".container");
       let spinBtn = document.querySelector(".spinBtn");
       let pop = document.querySelector(".popup");
+      let sticcc = document.querySelector("#Stick");
 
       let isSpinning = false;
       let currentOffset = 0;
@@ -70,7 +71,7 @@
       createBoxes();
 
       spinBtn.addEventListener("click", () => {
-        if (isSpinning) return;
+        if (isSpinning || pop.style.display==="flex") return;
 
         if (currentAudio) {
           currentAudio.pause();
@@ -82,6 +83,19 @@
 
         spin();
       });
+      function Rarity() {
+        const r = Math.random(); 
+  
+        if (r < 0.75) {
+            return "Common";      
+        } else if (r < 0.95) { 
+            return "Uncommon";    
+        } else if (r < 0.99) { 
+            return "Epic";         
+        } else {
+            return "Legendary";   
+        }
+}
 
       function spin() {
         if (isSpinning) return;
@@ -118,6 +132,8 @@
           } else {
             isSpinning = false;
             pop.style.display = "flex";
+            const rarity = Rarity();
+            sticcc.className = `${rarity}`;
 
 
             if (currentAudio) {
