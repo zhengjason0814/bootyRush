@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "pirata";
+    src: url(./assets/PirataOne-Regular.ttf);
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "pirata", sans-serif;
+    background-color: #fba275;
+}
+  
+#navbar {
+    border-bottom: none;
+    background-image: repeating-linear-gradient(45deg, 
+      transparent,
+      transparent 10px,
+      #4a1b10 10px,
+      #4a1b10 20px
+    );
+    background-size: 100% 4px;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #navbar img {
+    height: 8vh; 
+    margin: 1vh;
+  }
+  
+  #navbar a {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    margin: 1vh;
+  }
+  
+  #navbar h1{
+    margin-right: 2vw;
+    color: #8f3f2b;
+  }
+
+.gameboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    background-color: #8f3f2b;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #4a1b10;
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    background-color: #fba275;
+    border: 2px solid #4a1b10;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.square:hover {
+    background-color: #ff8c5a;
+}
+
+.square.clicked {
+    background-color: #6e1919;
+}
+
+.square img {
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

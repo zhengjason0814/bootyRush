@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines</title>
+    <link rel="stylesheet" href="mines.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html">
+          <img id="logo" src="./assets/index/logo.png"/>
+        </a>
+        <h1 id="goldDisplay"></h1>
+    </div>
+    <div class="gameboard">
+        <div class="grid"></div>
+    </div>
+</body>
+<script src="shared.js"></script>
+<script>
+    const grid = document.querySelector('.grid');
+    let diamondPosition;
+    let clickedSquares = 0;
+
+    function initializeGame() {
+        grid.innerHTML = ''; // Clear the grid
+        clickedSquares = 0;
+        diamondPosition = Math.floor(Math.random() * 25);
+        
+        for (let i = 0; i < 25; i++) {
+            const square = document.createElement('div');
+            square.classList.add('square');
+            
+            square.addEventListener('click', function() {
+                if (this.classList.contains('clicked')) {
+                    return;
+                }
+                
+                this.classList.add('clicked');
+                clickedSquares++;
+                
+                const img = document.createElement('img');
+                
+                if (i === diamondPosition) {
+                    img.src = './assets/mines/diamond.webp';
+                    addGold(5);
+                } else {
+                    img.src = './assets/mines/tnt.webp';
+                    loseGold(20);
+                }
+                
+                img.style.width = '100%';
+                img.style.height = '100%';
+                img.style.objectFit = 'contain';
+                
+                this.innerHTML = '';
+                this.appendChild(img);
+
+                if (clickedSquares === 25) {
+                    setTimeout(() => {
+                        initializeGame(); 
+                    }, 1000);
+                }
+            });
+            
+            grid.appendChild(square);
+        }
+    }
+
+    initializeGame();
+</script>
+</html>

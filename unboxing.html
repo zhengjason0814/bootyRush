@@ -9,9 +9,9 @@
   <body>
     <div id="navbar">
       <a href="index.html">
-        <img src="./assets/index/logo.png"/>
+        <img id="logo" src="./assets/index/logo.png"/>
       </a>
-      <h1>Your Gold: $1000</h1>
+      <h1 id="goldDisplay"></h1>
     </div>
     <h1 class="title">RANDOM LOOT GENERATOR</h1>
     <div class="wrapper">
@@ -21,7 +21,7 @@
     <div class="spin">
       <button class="spinBtn">SPIN</button>
     </div>
-
+    <script src="shared.js"></script>
     <script>
       const potentialWinning = [
         {
@@ -56,7 +56,6 @@
       let currentOffset = 0;
       let currentAudio = null;
 
-      // Initial setup
       createBoxes();
 
       spinBtn.addEventListener("click", () => {

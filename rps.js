@@ -1,5 +1,9 @@
 let buttons = document.querySelector(".choices");
-buttons.addEventListener("click", playRound);
+function handleClick(e) {
+    playRound(e);
+    boom();
+};
+buttons.addEventListener("click", handleClick);
 
 const body = document.querySelector("body");
 const playStage = document.querySelector(".playing-stage");
@@ -23,6 +27,11 @@ function getComputerChoice() {
     return Math.floor(Math.random() * 10);
 }
 
+function boom(){
+    audio = new Audio("./assets/rps/boom.mp3");
+    audio.play();
+}
+
 function playRound(event) {
   target = event.target.id;
   let computerChoice = getComputerChoice();
@@ -30,6 +39,7 @@ function playRound(event) {
         switch(target) {
             case "rock":
                 if (computerChoice === 0) {
+                    addGold(5);
                     message.textContent = "You Win! The computer chose scissors!";
                     let playerChoice = document.createElement("img");
                     playerChoice.src = "./assets/rock.png";
@@ -64,6 +74,7 @@ function playRound(event) {
                     }
                     playStage.append(playerChoice,botChoice);
                 } else {
+                    loseGold(20);
                     message.textContent = "You Lose! The computer chose paper!";
                     let playerChoice = document.createElement("img");
                     playerChoice.src = "./assets/rock.png";
@@ -84,6 +95,7 @@ function playRound(event) {
                 break;
             case "paper":
                 if (computerChoice === 0) {
+                    addGold(5);
                     message.textContent = "You Win! The computer chose rock!";
                     let playerChoice = document.createElement("img");
                     playerChoice.src = "./assets/paper.png";
@@ -118,6 +130,7 @@ function playRound(event) {
                     }
                     playStage.append(playerChoice,botChoice);
                 } else {
+                    loseGold(20);
                     message.textContent = "You Lost! The computer chose scissors!";
                     let playerChoice = document.createElement("img");
                     playerChoice.src = "./assets/paper.png";
@@ -138,6 +151,7 @@ function playRound(event) {
                 break;
             case "scissors":
                 if (computerChoice === 0) {
+                    addGold(5);
                     message.textContent = "You Win! The computer chose paper!";
                     let playerChoice = document.createElement("img");
                     playerChoice.src = "./assets/scissors.png";
@@ -172,6 +186,7 @@ function playRound(event) {
                     }
                     playStage.append(playerChoice,botChoice);
                 } else {
+                    loseGold(20);
                     message.textContent = "You Lost! The computer chose rock!";
                     let playerChoice = document.createElement("img");
                     playerChoice.src = "./assets/scissors.png";
