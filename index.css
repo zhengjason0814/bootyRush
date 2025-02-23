@@ -1,26 +1,32 @@
-html,
+@font-face {
+  font-family: "pirata";
+  src: url(./assets/PirataOne-Regular.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
-}
-
-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  font-family: "pirata", sans-serif;
+  background-color: #fba275;
 }
 
 .title {
   position: absolute;
-  color: white;
-  font-size: 3rem;
+  color: #4a1b10;
+  font-size: 5rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   display: flex;
   justify-content: center;
+  text-shadow: 2px;
+}
+
+#navbar {
+  width: 100%;
+  height: 8vh;
+  border: solid 1px black;
 }
