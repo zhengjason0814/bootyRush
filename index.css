@@ -121,10 +121,3 @@ body {
   text-decoration: none;
 }
 
-.dutchman {
-  position: absolute;
-  z-index: -1;
-  height: 70vh;
-  right: -10vw;
-  top: 10vh;
-}

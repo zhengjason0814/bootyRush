@@ -45,9 +45,13 @@
                 if (i === diamondPosition) {
                     img.src = './assets/mines/diamond.webp';
                     addGold(5);
+                    let audio = new Audio('./assets/mines/diamond.mp3');
+                    audio.play();
                 } else {
                     img.src = './assets/mines/tnt.webp';
                     loseGold(20);
+                    let audio = new Audio('./assets/mines/tnt.mp3');
+                    audio.play();
                 }
                 
                 img.style.width = '100%';
