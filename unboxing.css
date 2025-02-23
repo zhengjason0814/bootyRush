@@ -1,85 +1,85 @@
 @font-face {
-    font-family: 'pirata';
-    src: url(./assets/PirataOne-Regular.ttf);
+  font-family: "pirata";
+  src: url(./assets/PirataOne-Regular.ttf);
 }
 
-h1{
-    font-size: 10vh;
+h1 {
+  font-size: 10vh;
 }
 
-body{
-    background-color: #fba275;
-    font-family: 'pirata';
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: #4a1b10;
-}
-
-.image{
-    max-width: 150px;
-}
-
-.wrapper {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.container {
-    display: flex;
-    position: relative;
-    transition: transform 0.05s cubic-bezier(0.4, 0, 0.2, 1);
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    margin-top: 10vh;
-    will-change: transform;
-    transform: translateX(0);
-}
-
-.marker {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 30px solid #4a1b10;
-    margin-bottom: 5vh;
-    margin-left: auto;
-    margin-right: auto; 
-}
-
-.box{
-    min-width: 150px;
-    min-height: 150px;
-    flex: 0 0 200px;
-    border: solid 3px black;
-    border-radius: 10px;
-}
-
-.spin{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+body {
+  background-color: #fba275;
+  font-family: "pirata";
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #4a1b10;
 }
 
 .image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  max-width: 150px;
 }
 
-.spinBtn{
-    background-color: #4a1b10;
-    color: #fba275;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.5rem;
+.wrapper {
+  width: 68%;
+  overflow: hidden;
+  position: relative;
+  margin-left: 17vw;
 }
 
-.fire{
-    width: 30px;
-    display: none;
+.container {
+  display: flex;
+  position: relative;
+  transition: transform 0.05s cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 5vh;
+  will-change: transform;
+  transform: translateX(0);
+}
+
+.marker {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid #4a1b10;
+  margin-bottom: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+.box {
+  min-width: 250px;
+  min-height: 250px;
+  flex: 0 0 200px;
+  border: solid 3px black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spin {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.spinBtn {
+  background-color: #4a1b10;
+  color: #fba275;
+  padding: 10px 80px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
