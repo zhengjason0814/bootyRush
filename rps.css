@@ -98,7 +98,7 @@ body {
     display:flex;
     text-align: center;
     gap:7vh;
-    margin: 10px 0px;
+    margin-bottom: 0px;
     font-size: 50px;
 }
 
