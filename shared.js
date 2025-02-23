@@ -2,19 +2,19 @@ function loseGold(amount) {
     let gold = localStorage.getItem('playerGold') || 1000; 
     gold = parseInt(gold) - amount;
     localStorage.setItem('playerGold', gold);
-    document.getElementById('goldDisplay').textContent = `Your Gold: $${gold}`;
+    document.getElementById('goldDisplay').textContent = `Krabby Patty Coins: $${gold}`;
 }
 
 function addGold(amount) {
     let gold = localStorage.getItem('playerGold') || 1000;
     gold = parseInt(gold) + amount;
     localStorage.setItem('playerGold', gold);
-    document.getElementById('goldDisplay').textContent = `Your Gold: $${gold}`;
+    document.getElementById('goldDisplay').textContent = `Krabby Patty Coins: $${gold}`;
 }
 
 function initializeGold() {
     let gold = localStorage.getItem('playerGold') || 1000;
-    document.getElementById('goldDisplay').textContent = `Your Gold: $${gold}`;
+    document.getElementById('goldDisplay').textContent = `Krabby Patty Coins: $${gold}`;
 }
 
 document.addEventListener('DOMContentLoaded', initializeGold);
