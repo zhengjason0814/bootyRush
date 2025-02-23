@@ -1,27 +1,23 @@
 let heads = true;
 
-coin = document.querySelector("img");
+let coin = document.querySelector(".coin");
+let playButton = document.querySelector("#flip-button");
 
-playButton = document.querySelector("button");
 playButton.addEventListener("click", coinFlip);
+coin.addEventListener("animationend", secondFlip)
 
-coin.addEventListener("click", shrink)
-coin.addEventListener("animationend", expand);
-
-function shrink() {
-    coin.classList.add(".shrink-animation");
-}
-
-function expand() {
-    
-    coin.classList.add("expand-animation");
-}
-
-function coinFlip(event) {
-    let n = Math.floor(Math.random() * 10);
-    for (let i = 0; i < n; i++) {
-        shrink();
-        heads = !heads;
-        expand();
+function coinFlip() {
+    let n = Math.floor(Math.random() * 8) + 4;
+    for (let i = 1; i < n; i++) {
+        coin.classList.add("shrink-animation");
+        
     }
+}
+
+function secondFlip() {
+    if (heads === true) coin.src = "./assets/coinflip/coinTail.png";
+    else if (heads === false) coin.src = "coinHead.png";
+    coin.classList.remove("shrink-animation");
+    coin.classList.add("expand-animation");
+
 }

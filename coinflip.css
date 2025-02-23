@@ -22,11 +22,11 @@
 }
 
 .shrink-animation {
-  animation: shrink 0.5s forwards;
+  animation: shrink 1s linear forwards;
 }
 
 .expand-animation {
-  animation: expand 0.5s forwards;
+  animation: expand 1s linear forwards;
 }
 
 body {
@@ -81,7 +81,7 @@ body {
 }
 
 .coin {
-    width: 100vh;
+    width: 40vh;
     height: auto;
-    cursor: pointer;
+    border-radius:50%;
 }
