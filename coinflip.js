@@ -61,5 +61,8 @@ function secondHalf(e) {
       coin.classList.add("shrink-animation");
       flips += 2;
     }
+    else{
+      loseGold(50);
+    }
   }
 }

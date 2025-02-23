@@ -94,4 +94,9 @@ body {
 
 .choices #heads, .choices #tails {
     padding: 10px 35px;
+    font-size: 30px;  
+    border-radius: 10px;  
+    width: 200px;
+    cursor: pointer;
+    background-color: #8f3f2b;
 }
