@@ -3,7 +3,39 @@
   src: url(./assets/PirataOne-Regular.ttf);
 }
 
-h1 {
+#navbar {
+  border-bottom: none;
+  background-image: repeating-linear-gradient(45deg, 
+    transparent,
+    transparent 10px,
+    #4a1b10 10px,
+    #4a1b10 20px
+  );
+  background-size: 100% 4px;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar img {
+  height: 8vh; 
+  margin: 1vh;
+}
+
+#navbar a {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  margin: 1vh;
+}
+
+#navbar h1{
+  margin-right: 2vw;
+  color: #8f3f2b;
+}
+
+.title {
   font-size: 10vh;
 }
 

@@ -3,34 +3,37 @@
     src: url(./assets/PirataOne-Regular.ttf);
   }
 
-@keyframes throwFromLeft {
-  0% {
-    transform: translateX(-10vw) scale(2);
-    opacity: 0;
-  }
-  70% {
-    transform: translateX(0) scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0) scale(1);
-    opacity: 1;
-  }
+#navbar {
+    width: 100%;
+    border-bottom: none;
+    background-image: repeating-linear-gradient(45deg, 
+        transparent,
+        transparent 10px,
+        #4a1b10 10px,
+        #4a1b10 20px
+    );
+    background-size: 100% 4px;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: space-between;
 }
 
-@keyframes throwFromRight {
-  0% {
-    transform: translateX(10vw) scaleX(-1) scale(2);
-    opacity: 0;
-  }
-  70% {
-    transform: translateX(0) scaleX(-1) scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0) scaleX(-1) scale(1);
-    opacity: 1;
-  }
+#navbar img {
+    height: 8vh; 
+    margin: 1vh;
+}
+
+#navbar a {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    margin: 1vh;
+}
+
+#navbar h1{
+    margin-right: 2vw;
+    color: #8f3f2b;
 }
 
 body {
@@ -55,13 +58,16 @@ body {
     margin: 20px;
 }
 
-h1, .choices {
+.choices {
     display:flex;
     text-align: center;
     gap:7vh;
 }
 
-h1 {
+.title {
+    display:flex;
+    text-align: center;
+    gap:7vh;
     margin: 10px 0px;
     font-size: 65px;
 }
