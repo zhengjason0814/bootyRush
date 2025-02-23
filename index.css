@@ -66,12 +66,11 @@ body {
   top: 24vh;
   right: 8vw;
   width: 35vw;
-  height: 60vh;
-  margin-right: 13vw;
+  height: 59vh;
   background-color: #8f3f2b;
   border: 2px solid #4a1b10;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0px 10px;
 }
 
 .games-title {
