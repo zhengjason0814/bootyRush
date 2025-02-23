@@ -22,7 +22,9 @@ body {
 }
 
 h1, .choices {
+    display:flex;
     text-align: center;
+    gap:7vh;
 }
 
 .choice {
