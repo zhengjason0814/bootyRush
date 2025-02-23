@@ -8,11 +8,13 @@ const tailChoice = document.querySelector("#tails");
 
 headChoice.addEventListener("click", () => {
   humanChoice = "heads";
+  pling();
 });
 headChoice.addEventListener("click", coinFlip);
 
 tailChoice.addEventListener("click", () => {
   humanChoice = "tails";
+  pling();
 });
 tailChoice.addEventListener("click", coinFlip);
 
@@ -65,4 +67,9 @@ function secondHalf(e) {
       loseGold(50);
     }
   }
+}
+
+function pling(){
+  audio = new Audio("./assets/coinflip/coin-flip.wav");
+  audio.play();
 }
