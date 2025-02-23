@@ -70,6 +70,6 @@ function secondHalf(e) {
 }
 
 function pling(){
-  audio = new Audio("./assets/coinflip/coin-flip.wav");
+  audio = new Audio("./assets/coinflip/coin-flip.mp3");
   audio.play();
 }
