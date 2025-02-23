@@ -31,11 +31,11 @@ function playRound(event) {
                 if (computerChoice === 0) {
                     message.textContent = "You Win! The computer chose scissors!";
                     let playerChoice = document.createElement("img");
-                    playerChoice.src = "./assets/rock.png";
+                    playerChoice.src = "./assets/rps/rock.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
                     let botChoice = document.createElement("img");
-                    botChoice.src = "./assets/rock.png";
+                    botChoice.src = "./assets/rps/rock.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
@@ -46,11 +46,11 @@ function playRound(event) {
                 } else if (computerChoice === 1 || computerChoice === 2) {
                     message.textContent = "You Tie! The computer also chose rock!";
                     let playerChoice = document.createElement("img");
-                    playerChoice.src = "./assets/rock.png";
+                    playerChoice.src = "./assets/rps/rock.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
                     let botChoice = document.createElement("img");
-                    botChoice.src = "./assets/rock.png";
+                    botChoice.src = "./assets/rps/rock.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
@@ -61,11 +61,11 @@ function playRound(event) {
                 } else {
                     message.textContent = "You Lose! The computer chose paper!";
                     let playerChoice = document.createElement("img");
-                    playerChoice.src = "./assets/rock.png";
+                    playerChoice.src = "./assets/rps/rock.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
                     let botChoice = document.createElement("img");
-                    botChoice.src = "./assets/paper.png";
+                    botChoice.src = "./assets/rps/paper.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
@@ -79,11 +79,11 @@ function playRound(event) {
                 if (computerChoice === 0) {
                     message.textContent = "You Win! The computer chose rock!";
                     let playerChoice = document.createElement("img");
-                    playerChoice.src = "./assets/paper.png";
+                    playerChoice.src = "./assets/rps/paper.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
                     let botChoice = document.createElement("img");
-                    botChoice.src = "./assets/rock.png";
+                    botChoice.src = "./assets/rps/rock.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
@@ -94,11 +94,11 @@ function playRound(event) {
                 } else if (computerChoice === 1 || computerChoice === 2) {
                     message.textContent = "You Tied! The computer chose paper as well!";
                     let playerChoice = document.createElement("img");
-                    playerChoice.src = "./assets/paper.png";
+                    playerChoice.src = "./assets/rps/paper.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
                     let botChoice = document.createElement("img");
-                    botChoice.src = "./assets/paper.png";
+                    botChoice.src = "./assets/rps/paper.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
@@ -109,11 +109,11 @@ function playRound(event) {
                 } else {
                     message.textContent = "You Lost! The computer chose scissors!";
                     let playerChoice = document.createElement("img");
-                    playerChoice.src = "./assets/paper.png";
+                    playerChoice.src = "./assets/rps/paper.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
                     let botChoice = document.createElement("img");
-                    botChoice.src = "./assets/scissors.png";
+                    botChoice.src = "./assets/rps/scissors.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
@@ -127,11 +127,11 @@ function playRound(event) {
                 if (computerChoice === 0) {
                     message.textContent = "You Win! The computer chose paper!";
                     let playerChoice = document.createElement("img");
-                    playerChoice.src = "./assets/scissors.png";
+                    playerChoice.src = "./assets/rps/scissors.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
                     let botChoice = document.createElement("img");
-                    botChoice.src = "./assets/paper.png";
+                    botChoice.src = "./assets/rps/paper.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
@@ -142,11 +142,11 @@ function playRound(event) {
                 } else if (computerChoice === 1 || computerChoice === 2) {
                     message.textContent = "You Tied! The computer chose rock as scissors!";
                     let playerChoice = document.createElement("img");
-                    playerChoice.src = "./assets/scissors.png";
+                    playerChoice.src = "./assets/rps/scissors.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
                     let botChoice = document.createElement("img");
-                    botChoice.src = "./assets/scissors.png";
+                    botChoice.src = "./assets/rps/scissors.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
@@ -157,11 +157,11 @@ function playRound(event) {
                 } else {
                     message.textContent = "You Lost! The computer chose rock!";
                     let playerChoice = document.createElement("img");
-                    playerChoice.src = "./assets/scissors.png";
+                    playerChoice.src = "./assets/rps/scissors.png";
                     playerChoice.style.width = "100px";
                     playerChoice.style.height = "100px";
                     let botChoice = document.createElement("img");
-                    botChoice.src = "./assets/rock.png";
+                    botChoice.src = "./assets/rps/rock.png";
                     botChoice.style.width = "100px";
                     botChoice.style.height = "100px";
                     botChoice.style.transform = "scaleX(-1)";
