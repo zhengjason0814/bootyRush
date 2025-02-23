@@ -1,9 +1,15 @@
-References:
+# HopperHacks 2025
 
-<a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock paper scissors icons">Rock paper scissors icons created by Cap Cool - Flaticon</a>
+# Booty Rush: Come get yer' booty
 
-<a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock paper scissors icons">Rock paper scissors icons created by iconading - Flaticon</a>
+## Overview  
+**Booty Rush** IS THE GAME TO PLAY. COME GET KRABBY PATTY MONEY AND BE A BRAVE BUCCANEER. 
 
-<a href="https://www.flaticon.com/free-icons/fist" title="fist icons">Fist icons created by Ayub Irawan - Flaticon</a>
+## Main Games
+**Unboxing Game** – Open buried treasure and see what yee shall find!
+**Rock Paper Scissors** – Best yee pirates at sea and defend your glory!
+**Mines** – Avoid swashbuckling mines and find your path to treasure, ARR!
+**Coin Flip** – Flip your coin to riches, flipping profits and krabby patties!
 
-Sound Effect by <a href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=88793">freesound_community</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=88793">Pixabay</a>
+## Why Booty Rush!
+- 💰 **Booty** Booty wont rush to you, you must rush to booty. - Sun Tzu
