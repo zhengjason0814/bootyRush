@@ -85,3 +85,13 @@ body {
     height: auto;
     border-radius:50%;
 }
+
+.choices {
+    margin-top: 50px;
+    display:flex;
+    gap: 50px;
+}
+
+.choices #heads, .choices #tails {
+    padding: 10px 35px;
+}

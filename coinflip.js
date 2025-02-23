@@ -1,11 +1,24 @@
 let counter = 0;
 let heads = true;
 let flips = 0;
+let humanChoice = "";
+
+const headChoice = document.querySelector("#heads");
+const tailChoice = document.querySelector("#tails");
+
+headChoice.addEventListener("click", () => {
+  humanChoice = "heads";
+});
+headChoice.addEventListener("click", coinFlip);
+
+tailChoice.addEventListener("click", () => {
+  humanChoice = "tails";
+});
+tailChoice.addEventListener("click", coinFlip);
 
 const coin = document.querySelector(".coin");
 const playButton = document.querySelector("#flip-button");
 
-playButton.addEventListener("click", coinFlip);
 coin.addEventListener("animationend", secondHalf);
 
 function coinFlip() {
@@ -21,8 +34,8 @@ function secondHalf(e) {
     coin.classList.remove("shrink-animation");
     if (counter < flips - 1) {
       coin.src = heads 
-          ? "./assets/coinflip/coinTail.png" 
-          : "./assets/coinflip/coinHead.png";
+        ? "./assets/coinflip/coinTail.png" 
+        : "./assets/coinflip/coinHead.png";
       heads = !heads;
       coin.classList.add("expand-animation");
     }
@@ -33,5 +46,20 @@ function secondHalf(e) {
       coin.classList.add("shrink-animation");
     }
     counter++;
+  }
+  
+  if (counter >= flips) {
+    let finalResult = "";
+    if (coin.src.endsWith("coinHead.png")) {
+      finalResult = "heads";
+    } else if (coin.src.endsWith("coinTail.png")) {
+      finalResult = "tails";
+    }
+    if (finalResult === humanChoice) {
+      coin.classList.remove("shrink-animation", "expand-animation");
+      void coin.offsetWidth;
+      coin.classList.add("shrink-animation");
+      flips += 2;
+    }
   }
 }
