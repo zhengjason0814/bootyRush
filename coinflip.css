@@ -22,11 +22,11 @@
 }
 
 .shrink-animation {
-  animation: shrink .1s linear forwards;
+  animation: shrink 0.1s linear forwards;
 }
 
 .expand-animation {
-  animation: expand .1s linear forwards;
+  animation: expand 0.1s linear forwards;
 }
 
 body {
@@ -36,9 +36,9 @@ body {
   width: 100%;
   font-family: "pirata", sans-serif;
   background-color: #f5d8bf;
-  display:flex;
+  display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -77,28 +77,30 @@ body {
 }
 
 .title {
-    font-size: 65px;
-    color: #4a1b10;
+  font-size: 65px;
+  color: #4a1b10;
 }
 
 .coin {
-    width: 40vh;
-    height: auto;
-    border-radius:50%;
+  width: 40vh;
+  height: auto;
+  border-radius: 50%;
 }
 
 .choices {
-    margin-top: 50px;
-    display:flex;
-    gap: 50px;
+  margin-top: 50px;
+  display: flex;
+  gap: 50px;
 }
 
-.choices #heads, .choices #tails {
-    padding: 10px 35px;
-    font-size: 30px;  
-    border-radius: 10px;  
-    width: 200px;
-    cursor: pointer;
-    background-color: #8f3f2b;
-    font-family: pirata;
+.choices #heads,
+.choices #tails {
+  padding: 10px 35px;
+  font-size: 30px;
+  border-radius: 10px;
+  width: 200px;
+  cursor: pointer;
+  background-color: #8f3f2b;
+  font-family: pirata;
+  color: #f5d8bf;
 }

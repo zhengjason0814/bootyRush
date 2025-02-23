@@ -23,20 +23,10 @@ body {
   width: 50%;
   display: flex;
   justify-content: flex-start;
-  z-index:999;
-  text-shadow:
-  -3px -3px 0 #000,
-   3px -3px 0 #000, 
-  -3px  3px 0 #000, 
-   3px  3px 0 #000,
-  -3px  0   0 #000,
-   3px  0   0 #000, 
-   0   -3px 0 #000,
-   0    3px 0 #000,
-  -2px -2px 0 #000,
-   2px -2px 0 #000,
-  -2px  2px 0 #000,
-   2px  2px 0 #000;
+  z-index: 999;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000, -3px 0 0 #000, 3px 0 0 #000, 0 -3px 0 #000, 0 3px 0 #000,
+    -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
 #navbar {
@@ -73,12 +63,11 @@ body {
   color: #8f3f2b;
 }
 
-#hero{
+#hero {
   width: 100%;
   display: flex;
   overflow: hidden;
 }
-
 
 .games {
   width: 80%;
@@ -103,15 +92,15 @@ body {
   gap: 20px;
 }
 
-.Footer{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  background-color:#dbbea5;
-  font-size:1.5rem;
-  align-items:center;
-  padding:10px 0px;
-
+.Footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #dbbea5;
+  font-size: 1.5rem;
+  align-items: center;
+  padding: 10px 0px;
+  color: #4a1b10;
 }
 
 .game-icon {
@@ -148,25 +137,25 @@ body {
 }
 
 #water {
-  height:630px;
-  width:1000px;
+  height: 630px;
+  width: 1000px;
   margin-left: 69.5vh;
-  transform:rotate(3deg);
+  transform: rotate(3deg);
 }
 
-#ship{
+#ship {
   position: absolute;
-  top:20%;
-  left:40%;
+  top: 20%;
+  left: 40%;
   height: 700px;
   width: 800px;
-  z-index:90;
+  z-index: 90;
 }
 
-.gameSection{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  margin-top:60px;
+.gameSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
   margin-bottom: 40px;
 }
