@@ -12,4 +12,4 @@
 **Coin Flip** – Flip your coin to riches, flipping profits and krabby patties! </br>
 
 ## Why Booty Rush!
-    Booty wont rush to you, you must rush to booty. - Sun Tzu
+**Booty** wont rush to you, you must rush to booty. - Sun Tzu
