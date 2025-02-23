@@ -19,18 +19,13 @@ body.appendChild(playerScore);
 body.appendChild(botScore);
 
 function getComputerChoice() {
-<<<<<<< HEAD
     return Math.floor(Math.random() * 10);
-=======
-  return Math.floor(Math.random() * 3);
->>>>>>> 75d75ce (index)
 }
 
 function playRound(event) {
   target = event.target.id;
   let computerChoice = getComputerChoice();
 
-<<<<<<< HEAD
         switch(target) {
             case "rock":
                 if (computerChoice === 0) {
@@ -181,71 +176,3 @@ function playRound(event) {
                 break;
         } 
 }
-=======
-  switch (target) {
-    case "rock":
-      if (computerChoice == 0) {
-        message.textContent = "Tie! Rock ties with rock!";
-        playerScore.textContent = `Player Score: ${humanScore}`;
-        botScore.textContent = `Computer Score: ${computerScore}`;
-      } else if (computerChoice == 1) {
-        message.textContent = "You Lose! Rock loses to paper!";
-        computerScore++;
-        playerScore.textContent = `Player Score: ${humanScore}`;
-        botScore.textContent = `Computer Score: ${computerScore}`;
-      } else {
-        message.textContent = "You Win! Rock wins against scissors!";
-        humanScore++;
-        playerScore.textContent = `Player Score: ${humanScore}`;
-        botScore.textContent = `Computer Score: ${computerScore}`;
-      }
-      break;
-    case "paper":
-      if (computerChoice == 0) {
-        message.textContent = "You Win! Paper beats rock!";
-        humanScore++;
-        playerScore.textContent = `Player Score: ${humanScore}`;
-        botScore.textContent = `Computer Score: ${computerScore}`;
-      } else if (computerChoice == 1) {
-        message.textContent = "Tie! Paper ties with paper!";
-        playerScore.textContent = `Player Score: ${humanScore}`;
-        botScore.textContent = `Computer Score: ${computerScore}`;
-      } else {
-        message.textContent = "You Lose! Paper loses against scissors!";
-        computerScore++;
-        playerScore.textContent = `Player Score: ${humanScore}`;
-        botScore.textContent = `Computer Score: ${computerScore}`;
-      }
-      break;
-    case "scissors":
-      if (computerChoice == 0) {
-        message.textContent = "You Lose! Scissors loses to rock!";
-        computerScore++;
-        playerScore.textContent = `Player Score: ${humanScore}`;
-        botScore.textContent = `Computer Score: ${computerScore}`;
-      } else if (computerChoice == 1) {
-        message.textContent = "You Win! Scissors wins against paper!";
-        humanScore++;
-        playerScore.textContent = `Player Score: ${humanScore}`;
-        botScore.textContent = `Computer Score: ${computerScore}`;
-      } else {
-        message.textContent = "Tie! Scissors ties with scissors!";
-        playerScore.textContent = `Player Score: ${humanScore}`;
-        botScore.textContent = `Computer Score: ${computerScore}`;
-      }
-      break;
-    default:
-      console.log("Something went wrong!");
-      break;
-  }
-  if (computerScore === 5) {
-    message.textContent = "Computer Wins! Try again next time.";
-    computerScore = 0;
-    humanScore = 0;
-  } else if (humanScore === 5) {
-    message.textContent = "Congratulations! You won!";
-    computerScore = 0;
-    humanScore = 0;
-  }
-}
->>>>>>> 75d75ce (index)
