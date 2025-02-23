@@ -1,9 +1,14 @@
+@font-face {
+    font-family: "pirata";
+    src: url(./assets/PirataOne-Regular.ttf);
+  }
+
 body {
     display:flex;
     flex-direction: column;
     align-items:center;
     background-color: #fba275;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'pirata', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -21,10 +26,47 @@ body {
 }
 
 h1, .choices {
+    display:flex;
     text-align: center;
+    gap:7vh;
+}
+
+h1 {
+    margin: 10px 0px;
+    font-size: 65px;
 }
 
 .choice {
     width: 100px;
     height: auto;
+}
+
+button {
+    width:80px;
+    height:80px;   
+    border-radius:50%;
+}
+
+#rock, #paper, #scissors {
+    font-weight:bolder;
+    color: #ffffff;
+    font-size:15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#rock {
+    background-color: #3B3A36;
+    border: #8B4513 3px solid;
+}
+
+#paper {    
+    background-color: #7c7150;
+    border: #8B4513 3px solid;  
+}
+
+#scissors {
+    background-color: #5a5b51;
+    border: #8B4513 3px solid;
 }
