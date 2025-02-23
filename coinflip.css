@@ -22,11 +22,11 @@
 }
 
 .shrink-animation {
-  animation: shrink 1s linear forwards;
+  animation: shrink .1s linear forwards;
 }
 
 .expand-animation {
-  animation: expand 1s linear forwards;
+  animation: expand .1s linear forwards;
 }
 
 body {
