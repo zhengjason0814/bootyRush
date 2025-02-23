@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-face {
     font-family: 'pirata';
     src: url(./assets/PirataOne-Regular.ttf);
@@ -84,26 +83,3 @@ body{
     width: 30px;
     display: none;
 }
-=======
-body {
-  background-color: #fba275;
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20vh;
-  gap: 20px;
-}
-
-.box {
-  min-width: 100px;
-  min-height: 100px;
-  border: solid 1px black;
-}
->>>>>>> 75d75ce (index)
