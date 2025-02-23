@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "pirata";
+  src: url(./assets/PirataOne-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "pirata", sans-serif;
+  background-color: #fba275;
+}
+
