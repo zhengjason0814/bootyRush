@@ -16,7 +16,7 @@ body {
     justify-content:space-around;
     align-items:center;
     gap: 5vh;
-    border: #6e1919 3px solid;
+    border: #6e1919 5px dotted;
     margin: 20px;
 }
 
