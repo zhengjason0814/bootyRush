@@ -18,6 +18,7 @@ botScore.style.textAlign = "center";
 
 message.textContent = "Press any button choice to play!";
 message.style.fontSize = "30px";
+message.style.marginBottom = "20px";
 
 body.appendChild(message);
 body.appendChild(playerScore);
