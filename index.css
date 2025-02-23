@@ -3,6 +3,18 @@
   src: url(./assets/PirataOne-Regular.ttf);
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* adjust the value for how high you want it to bob */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
