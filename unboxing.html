@@ -21,10 +21,12 @@
     <div class="spin">
       <button class="spinBtn">SPIN</button>
     </div>
+    <div class="overlay" onclick="closePopup()"></div>
     <div class="popup">
       <div  onclick="closePopup()" class="close">X</div>
       <div ><img class="stickimg" src="./assets/unboxing/stick.webp"></img></div>
-      <div id="Stick">A Realistic Sticc</div>
+      <div id="stick">A Realistic Sticc</div>
+      <div class="stickDesc"></div>
     </div>
     <script src="shared.js"></script>
     <script>
@@ -58,16 +60,17 @@
       let container = document.querySelector(".container");
       let spinBtn = document.querySelector(".spinBtn");
       let pop = document.querySelector(".popup");
-      let sticcc = document.querySelector("#Stick");
+      let sticcc = document.querySelector("#stick");
 
       let isSpinning = false;
       let currentOffset = 0;
       let currentAudio = null;
 
-    function closePopup() {
-    pop.style.display = 'none';
-    }
-
+      function closePopup() {
+        pop.style.display = 'none';
+        document.querySelector('.overlay').style.display = 'none';
+      }
+    
       createBoxes();
 
       spinBtn.addEventListener("click", () => {
@@ -95,7 +98,7 @@
         } else {
             return "Legendary";   
         }
-}
+      }
 
       function spin() {
         if (isSpinning) return;
@@ -132,9 +135,10 @@
           } else {
             isSpinning = false;
             pop.style.display = "flex";
+            document.querySelector('.overlay').style.display = "block";
             const rarity = Rarity();
             sticcc.className = `${rarity}`;
-
+            document.querySelector('.stickDesc').innerHTML = `You unboxed ${rarity} stick!`;
 
             if (currentAudio) {
               currentAudio.pause();

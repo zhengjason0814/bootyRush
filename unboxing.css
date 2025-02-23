@@ -131,7 +131,20 @@ body {
   background-color: #fba275;
   left: 50%;
   flex-direction: column;
+  z-index: 999;
 }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 998;
+}
+
 .close {
   width: 50px;
   font-size: 2rem;
@@ -146,6 +159,16 @@ body {
   border: 2px black solid;
   padding: 20px;
   border-radius: 20px;
+  background-color: #f5d8bf;
+}
+
+#stick{
+  font-size: 40px;
+}
+
+.stickDesc{
+  font-size: 30px;
+  margin-top: 5px;
 }
 
 .Legendary {
