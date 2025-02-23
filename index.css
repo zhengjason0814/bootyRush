@@ -103,6 +103,16 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+.Footer{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  background-color:#dbbea5;
+  font-size:1.5rem;
+  align-items:center;
+  padding:10px 0px;
+
+}
 
 .game-icon {
   background-color: #f5d8bf;
