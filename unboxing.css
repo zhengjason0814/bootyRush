@@ -110,13 +110,14 @@ body {
 
 .spinBtn {
   background-color: #4a1b10;
-  color: #fba275;
+  font-family: pirata;
+  color:#f5d8bf;
   padding: 10px 80px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.5rem;
-  color: #f5d8bf;
+  font-size: 30px;
+  letter-spacing: 2px;
 }
 
 .popup {
@@ -168,7 +169,7 @@ body {
 
 .stickDesc{
   font-size: 30px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .Legendary {
