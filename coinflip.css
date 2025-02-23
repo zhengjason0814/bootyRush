@@ -3,6 +3,32 @@
   src: url(./assets/PirataOne-Regular.ttf);
 }
 
+@keyframes shrink {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes expand {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.shrink-animation {
+  animation: shrink 0.5s forwards;
+}
+
+.expand-animation {
+  animation: expand 0.5s forwards;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,5 +36,18 @@ body {
   width: 100%;
   font-family: "pirata", sans-serif;
   background-color: #fba275;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
 }
 
+h1 {
+    font-size: 65px;
+}
+
+img {
+    width: 50vh;
+    height: 50vh;
+    cursor: pointer;
+}
