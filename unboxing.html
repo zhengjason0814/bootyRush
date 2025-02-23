@@ -81,11 +81,11 @@
         currentAudio.play();
 
         spin();
-        pop.style.display = "flex";
       });
 
       function spin() {
         if (isSpinning) return;
+        loseGold(50);
         isSpinning = true;
 
         const spinDuration = 8000;
@@ -117,6 +117,8 @@
             requestAnimationFrame(animate);
           } else {
             isSpinning = false;
+            pop.style.display = "flex";
+
 
             if (currentAudio) {
               currentAudio.pause();
