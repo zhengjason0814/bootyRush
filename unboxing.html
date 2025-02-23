@@ -7,13 +7,7 @@
     <link rel="stylesheet" href="unboxing.css" />
   </head>
   <body>
-    <div id="navbar">
-      <a href="index.html">
-        <img id="logo" src="./assets/index/logo.png"/>
-      </a>
-      <h1 id="goldDisplay"></h1>
-    </div>
-    <h1 class="title">RANDOM LOOT GENERATOR</h1>
+    <h1>TEST YOUR LUCK</h1>
     <div class="wrapper">
       <div class="container"></div>
     </div>
@@ -21,8 +15,14 @@
     <div class="spin">
       <button class="spinBtn">SPIN</button>
     </div>
-    <script src="shared.js"></script>
+    <div class="popup">
+      <div  onclick="closePopup()" class="close">X</div>
+      <div ><img class="stickimg" src="./assets/unboxing/stick.webp"></img></div>
+      <div class="Rarity">A Realistic Sticc</div>
+    </div>
+
     <script>
+
       const potentialWinning = [
         {
           name: "AirpodsPro",
@@ -52,9 +52,15 @@
 
       let container = document.querySelector(".container");
       let spinBtn = document.querySelector(".spinBtn");
+      let pop = document.querySelector(".popup");
+
       let isSpinning = false;
       let currentOffset = 0;
       let currentAudio = null;
+
+    function closePopup() {
+    pop.style.display = 'none';
+    }
 
       createBoxes();
 
@@ -70,6 +76,7 @@
         currentAudio.play();
 
         spin();
+        pop.style.display = "flex";
       });
 
       function spin() {
