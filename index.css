@@ -25,16 +25,14 @@ body {
   justify-content: flex-start;
   z-index:999;
   text-shadow:
-  /* Outer thick outline */
-  -3px -3px 0 #000,  /* Top-left */
-   3px -3px 0 #000,  /* Top-right */
-  -3px  3px 0 #000,  /* Bottom-left */
-   3px  3px 0 #000,  /* Bottom-right */
-  -3px  0   0 #000,  /* Left */
-   3px  0   0 #000,  /* Right */
-   0   -3px 0 #000,  /* Top */
+  -3px -3px 0 #000,
+   3px -3px 0 #000, 
+  -3px  3px 0 #000, 
+   3px  3px 0 #000,
+  -3px  0   0 #000,
+   3px  0   0 #000, 
+   0   -3px 0 #000,
    0    3px 0 #000,
-  /* Additional inner layers for a denser effect */
   -2px -2px 0 #000,
    2px -2px 0 #000,
   -2px  2px 0 #000,
@@ -81,6 +79,7 @@ body {
   overflow: hidden;
 }
 
+
 .games {
   width: 80%;
   box-sizing: border-box;
@@ -103,6 +102,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+
 .Footer{
   width:100%;
   display:flex;
@@ -152,6 +152,15 @@ body {
   width:1000px;
   margin-left: 69.5vh;
   transform:rotate(3deg);
+}
+
+#ship{
+  position: absolute;
+  top:20%;
+  left:40%;
+  height: 700px;
+  width: 800px;
+  z-index:90;
 }
 
 .gameSection{

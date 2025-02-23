@@ -78,6 +78,7 @@ body {
 
 .title {
     font-size: 65px;
+    color: #4a1b10;
 }
 
 .coin {
@@ -99,4 +100,5 @@ body {
     width: 200px;
     cursor: pointer;
     background-color: #8f3f2b;
+    font-family: pirata;
 }
