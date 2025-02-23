@@ -149,7 +149,8 @@ body {
   left: 40%;
   height: 700px;
   width: 800px;
-  z-index: 90;
+  z-index:90;
+  animation:float 3s ease-in-out infinite;
 }
 
 .gameSection {
