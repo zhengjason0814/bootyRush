@@ -9,7 +9,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: "pirata", sans-serif;
-  background-color: #fba275;
+  background-color: #f5d8bf;
 }
 
 .title {
@@ -23,9 +23,22 @@ body {
   width: 50%;
   display: flex;
   justify-content: flex-start;
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
-    2px 2px 0 black, -2px 0px 0 black, 2px 0px 0 black, 0px -2px 0 black,
-    0px 2px 0 black;
+  z-index:999;
+  text-shadow:
+  /* Outer thick outline */
+  -3px -3px 0 #000,  /* Top-left */
+   3px -3px 0 #000,  /* Top-right */
+  -3px  3px 0 #000,  /* Bottom-left */
+   3px  3px 0 #000,  /* Bottom-right */
+  -3px  0   0 #000,  /* Left */
+   3px  0   0 #000,  /* Right */
+   0   -3px 0 #000,  /* Top */
+   0    3px 0 #000,
+  /* Additional inner layers for a denser effect */
+  -2px -2px 0 #000,
+   2px -2px 0 #000,
+  -2px  2px 0 #000,
+   2px  2px 0 #000;
 }
 
 #navbar {
@@ -57,24 +70,27 @@ body {
 }
 
 #navbar h1 {
-  margin-right: 2vw;
+  margin-right: 100px;
   color: #8f3f2b;
 }
 
+#hero{
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
 .games {
-  position: absolute;
-  top: 24vh;
-  right: 8vw;
-  width: 35vw;
-  height: 59vh;
+  width: 80%;
+  box-sizing: border-box;
   background-color: #8f3f2b;
   border: 2px solid #4a1b10;
   border-radius: 10px;
-  padding: 0px 10px;
+  padding: 20px 40px;
 }
 
 .games-title {
-  color: #fba275;
+  color: #f5d8bf;
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -88,7 +104,7 @@ body {
 }
 
 .game-icon {
-  background-color: #fba275;
+  background-color: #f5d8bf;
   border: 2px solid #4a1b10;
   border-radius: 8px;
   padding: 10px;
@@ -120,3 +136,17 @@ body {
   text-decoration: none;
 }
 
+#water {
+  height:630px;
+  width:1000px;
+  margin-left: 69.5vh;
+  transform:rotate(3deg);
+}
+
+.gameSection{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin-top:60px;
+  margin-bottom: 40px;
+}
