@@ -1,6 +1,4 @@
-# HopperHacks 2025 🏆
-
-## Winner of HopperHacks 2025 Treasure Trove of Talent Track 🌟
+## Winner 🏆 of HopperHacks 2025 Treasure Trove of Talent Track 🌟
 
 # Booty Rush: Come get yer' booty 🏴‍☠️
 
